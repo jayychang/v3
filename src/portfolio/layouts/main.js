@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.section`
+import SkillsCanvas from 'components/SkillsCanvas'
+
+const Container = styled.main`
   height: 90vh;
   background: #f0f0f0;
 
@@ -20,5 +22,9 @@ const Container = styled.section`
 `
 
 export default () => {
-  return <Container />
+  return (
+    <Container>
+      {/* <SkillsCanvas /> */}
+    </Container>
+  )
 }

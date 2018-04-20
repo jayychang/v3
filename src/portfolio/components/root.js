@@ -5,10 +5,6 @@ import { Header, Main, Footer } from 'layouts'
 import { setScrolledTop } from 'Redux/actions/scrolledTop'
 
 class Root extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll)
   }

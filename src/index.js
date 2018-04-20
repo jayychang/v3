@@ -6,15 +6,14 @@ import { createStore } from 'redux'
 import Root from 'components/root'
 import reducers from 'Redux/reducers'
 
-import "babel-polyfill"
+import 'babel-polyfill'
 import './styles.less'
 
-const store = createStore(reducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const store = createStore(reducers)
 
 const _Root = () => {
   return (
-    <Provider store={ store }>
+    <Provider store={store}>
       <Root />
     </Provider>
   )

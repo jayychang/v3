@@ -5,6 +5,8 @@ import styled from 'styled-components'
 
 const ScrollContainer = styled.div`
   height: calc(5100px + 100vh);
+  cursor: default;
+  user-select: none;
 `
 
 const TextContainer = styled.div`
